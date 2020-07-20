@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facci-Uleam</title>
+    <link rel="shortcut icon" href="img/logofarmacia.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/EstiloInicio.css">
+    <link rel="stylesheet" href="css/SolicitarTurno.css">
+   
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Login.html">Solicitar Turno</a> 
+            <a href="#">Administracion de turnos</a>
+            <a href="ConsultarUsuarios.html">Consultar Usuarios</a>
+            <a href="AcercaDe.html">Acerca de</a>
+            <a href="Inicio.html">Cerrar Sesion</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Farmacia</h1>
+            <h2>Marmolo</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="clientes contenedor">
+            <table>
+                <tr>
+                    <div>
+                        <h2>Administración de Solicitudes</h2>
+                        
+                        
+                    <td>
+                        <p>
+                            Solicitudes de Usuarios
+                            </p>
+                            <table class="list" id="employeeList">
+                                <thead>
+                                    <tr>
+                                        <th>Nombres</th>
+                                        <th>Numero de Cedula</th>
+                                        <th>Fecha</th>
+                                        <th>Hora</th>
+                                        <th>Ciudad</th>
+                                        <th>Transacción</th>
+                                        <th colspan="3" scope="rowgroup">Solicitud</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Angel Francisco Mendoza Delgado</td>
+                                    <td>1307664528</td>
+                                    <td>23/08/2020 </td>
+                                    <td>15:30 </td>
+                                    <td>Manta</td>
+                                    <td>Retiro de Medicamentos</td>
+                                    
+                                    <td><button  type="button" class="alert1" onclick="alert1()" >Aceptar</button></td>
+                                    <td><button type="button" class="alert2" onclick="alert2()">Rechazar</button></td>
+                                    <td><button type="button" class="alert3" onclick="alert3()">Editar Fecha</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Andres Fernando Avila Mera</td>
+                                    <td>1316354209</td>
+                                    <td>2/09/2020 </td>
+                                    <td>10:55</td>
+                                    <td>Manta</td>
+                                    <td>Turno de Atención</td>
+                                    <td><button  type="button" class="alert1" onclick="alert1()" >Aceptar</button></td>
+                                    <td><button type="button" class="alert2" onclick="alert2()">Rechazar</button></td>
+                                    <td><button type="button" class="alert3" onclick="alert3()">Editar Fecha</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Luisa Alexandar Centeno Mora</td>
+                                    <td>1369742545</td>
+                                    <td>30/07/2020 </td>
+                                    <td>13:00</td>
+                                    <td>Manta</td>
+                                    <td>Retiro de Medicamentos</td>
+                                   <td><button  type="button" class="alert1" onclick="alert1()" >Aceptar</button></td>
+                                    <td><button type="button" class="alert2" onclick="alert2()">Rechazar</button></td>
+                                    <td><button type="button" class="alert3" onclick="alert3()">Editar Fecha</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Arturo Andres Macías Lopez</td>
+                                    <td>1315286073</td>
+                                    <td>12/11/2020 </td>
+                                    <td>12:10</td>
+                                    <td>Manta</td>
+                                    <td>Turno de Atencion</td>
+                                    <td><button  type="button" class="alert1" onclick="alert1()" >Aceptar</button></td>
+                                    <td><button type="button" class="alert2" onclick="alert2()">Rechazar</button></td>
+                                    <td><button type="button" class="alert3" onclick="alert3()">Editar Fecha</button></td>        
+                                  </tr>
+                                  <tr>
+                                    <td>Daniela Erika Catagua  Ochoa</td>
+                                    <td>1316164709</td>
+                                    <td>29/07/2020 </td>
+                                    <td>17:10</td>
+                                    <td>Manta</td>
+                                    <td>Retiro de Medicamentos</td>
+                                    <td><button  type="button" class="alert1" onclick="alert1()" >Aceptar</button></td>
+                                    <td><button type="button" class="alert2" onclick="alert2()">Rechazar</button></td> 
+                                    <td><button type="button" class="alert3" onclick="alert3()">Editar Fecha</button></td>       
+                                  </tr>
+                                  <tr>
+                                    <td>Sandro Josue Parraga Pezo</td>
+                                    <td>1245786428</td>
+                                    <td>29/11/2020 </td>
+                                    <td>09:00</td>
+                                    <td>Manta</td>
+                                    <td>Turno de Atencion</td>
+                                    <td><button  type="button" class="alert1" onclick="alert1()" >Aceptar</button></td>
+                                    <td><button type="button" class="alert2" onclick="alert2()">Rechazar</button></td>
+                                    <td><button type="button" class="alert3" onclick="alert3()">Editar Fecha</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>José Arturo Loor Zambrano</td>
+                                    <td>1312457638</td>
+                                    <td>23/12/2020 </td>
+                                    <td>16:30</td>
+                                    <td>Manta</td>
+                                    <td>Retiro de Medicamentos</td>
+                                    <td><button  type="button" class="alert1" onclick="alert1()" >Aceptar</button></td>
+                                    <td><button type="button" class="alert2" onclick="alert2()">Rechazar</button></td> 
+                                    <td><button type="button" class="alert3" onclick="alert3()">Editar Fecha</button></td>           
+                                  </tr>
+                                     
+                                <tbody>
+            
+                                </tbody>
+                            </table>
+                   
+                            
+                    </td>
+                    
+                </tr>
+            </table>
+    </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>233-4543</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>marbolfarmacys@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p>Calle los delfines avenida costa mar</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Pagina realizada por Yandri Macias| 2020</h2>
+    </footer>
+</body>
+<script src="js/AdministrarTurnos.js"></script>
+
+</html>
